@@ -9,12 +9,12 @@ Firstly, you need 3 / 2 things from pip depending on your Python version.
 
 If on Python 13 or above:
 ```
-pip install audioop-lts discord nltk
+pip install audioop-lts discord nltk python-dotenv
 ```
 
 If on Python 12 or below:
 ```
-pip install discord nltk
+pip install discord nltk python-dotenv
 ```
 
 Then go into `app.py` and add your
