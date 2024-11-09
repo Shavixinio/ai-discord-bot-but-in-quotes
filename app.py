@@ -5,6 +5,9 @@ import random
 import os
 import re
 from collections import defaultdict
+from dotenv import load_dotenv
+
+load_dotenv()
 
 nltk.download('punkt')
 nltk.download('punkt_tab')
@@ -168,4 +171,5 @@ async def send_message_periodically(channel):
         else:
             print("No unique sentence generated.")
 
-client.run('YOUR_BOT_TOKEN')
+TOKEN = os.getenv("BOT_TOKEN")
+client.run(TOKEN)
